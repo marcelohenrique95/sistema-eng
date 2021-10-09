@@ -1,45 +1,18 @@
 .home {
-  height: 100%;
-  margin: 0;
-  section {
-    width: 100%;
+  display: flex;
+  margin-top: 5%;
+  max-height: 600px;
+
+  &__section-home {
+    width: 15%;
 
   }
-}
 
-.grid {
-	display: grid;
-  grid-gap: 10px;
-  grid-template-columns: [sidenav] 15%;
-}
+  &__section-notice {
+    background-color: #000;
+    margin: 0 auto;
 
-.header {
-	grid-area: header;
-}
+    padding: 5px;
 
-.content {
-	grid-area: content;
-}
-
-.sidenav {
-	grid-area: sidenav;
-}
-
-.advert {
-	grid-area: advert;
-}
-
-.footer {
-	grid-area: footer;
-  position: relative;
-  width: 100%;
-  bottom: 0;
-}
-
-.grid-template-areas {
-	grid-template-areas:
-		"header header header"
-		"sidenav content advert"
-		"sidenav footer footer"
-		;
+  }
 }
