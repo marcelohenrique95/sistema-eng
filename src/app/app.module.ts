@@ -1,3 +1,8 @@
+import { ObrasModule } from './screen/obra/obras.module';
+import { RouterModule } from '@angular/router';
+import { NavbarModule } from './component/navbar/navbar.module';
+import { FooterModule } from './component/footer/footer.module';
+import { HeaderModule } from './component/header/header.module';
 import { HomeModule } from './screen/home/home.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,7 +21,11 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     FontAwesomeModule,
     AppRoutingModule,
-    HomeModule
+    RouterModule,
+    HeaderModule,
+    NavbarModule,
+    FooterModule,
+    ObrasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
