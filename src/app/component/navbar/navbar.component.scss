@@ -1,0 +1,34 @@
+.navbar {
+  background-color: #0e8a64fa;
+
+  &__menu-options {
+    padding: 12px;
+
+    button {
+      background: transparent;
+      border: none;
+      font-size: 15px;
+      color: #fff;
+      cursor: pointer;
+      i {
+        position: fixed;
+      }
+      a {
+        margin: 15px;
+        font-family: Impact;
+      }
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      border-top: 1px solid #053527fa;
+    }
+  }
+
+  a:hover {
+    font-size: 17px;
+    color: #053527fa;
+    transition: 0.2s;
+  }
+}

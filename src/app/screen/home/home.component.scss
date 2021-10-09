@@ -1,0 +1,45 @@
+.home {
+  height: 100%;
+  margin: 0;
+  section {
+    width: 100%;
+
+  }
+}
+
+.grid {
+	display: grid;
+  grid-gap: 10px;
+  grid-template-columns: [sidenav] 15%;
+}
+
+.header {
+	grid-area: header;
+}
+
+.content {
+	grid-area: content;
+}
+
+.sidenav {
+	grid-area: sidenav;
+}
+
+.advert {
+	grid-area: advert;
+}
+
+.footer {
+	grid-area: footer;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.grid-template-areas {
+	grid-template-areas:
+		"header header header"
+		"sidenav content advert"
+		"sidenav footer footer"
+		;
+}

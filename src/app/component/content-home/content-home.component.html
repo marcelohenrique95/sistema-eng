@@ -1,0 +1,17 @@
+<div class="content-home">
+  <section class="content-home__title">
+      <h1>AVISOS IMPORTANTES</h1>
+  </section>
+  <section class="content-home__avisos" *ngFor="let item of avisos">
+    <h1>
+      {{item.title}}
+    </h1>
+    <a>
+      {{item.label}}
+    </a>
+    <h3>
+      {{item.date}}
+    </h3>
+    <hr />
+  </section>
+</div>
