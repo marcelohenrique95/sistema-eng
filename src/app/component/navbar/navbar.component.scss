@@ -1,5 +1,32 @@
 .navbar {
   background-color: #0e8a64fa;
+  width: 15%;
+  height: 60%;
+  position: fixed;
+  margin-top: 2%;
+  border-radius:0px 20px 0px 20px;
+
+  &__menu-logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    div {
+      border-radius:0px 20px 0px 20px;
+      width: 85px;
+      height: 85px;
+      border: 5px solid;
+      border-color: #053527fa;
+      background-color: #fff;
+      margin: 15px;
+      box-shadow: 1px 1px 10px 5px #9b9b9ba4;
+      padding: 5px;
+      img {
+        width: 100%;
+
+      }
+    }
+  }
 
   &__menu-options {
     padding: 12px;
