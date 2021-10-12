@@ -1,3 +1,4 @@
+import { ColaboradorModule } from './screen/colaborador/colaborador.module';
 import { ObrasModule } from './screen/obra/obras.module';
 import { RouterModule } from '@angular/router';
 import { NavbarModule } from './component/navbar/navbar.module';
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     HeaderModule,
     NavbarModule,
     FooterModule,
-    ObrasModule
+    ObrasModule,
+    ColaboradorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { ColaboradorComponent } from './screen/colaborador/colaborador.component';
 import { PageErrorComponent } from './component/page-error/page-error.component';
 import { ObrasComponent } from './screen/obra/obras.component';
 import { HomeComponent } from './screen/home/home.component';
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'obra',
     component: ObrasComponent
+  },
+  {
+    path: 'colaboradores',
+    component: ColaboradorComponent
   },
   {
     path: '**',
