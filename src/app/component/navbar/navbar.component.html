@@ -5,7 +5,7 @@
     </div>
   </section>
   <section class="navbar__menu-options" *ngFor="let item of menu">
-    <button routerLink="{{item.router}}">
+    <button routerLinkActive="active" routerLink="{{item.router}}">
       <i class="{{ item.icon }}"></i>
       <a> {{item.label}}</a>
     </button>

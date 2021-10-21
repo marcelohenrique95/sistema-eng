@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./colaborador.component.scss']
 })
 export class ColaboradorComponent implements OnInit {
-
+  public listFilter: any;
   public listFunc = [
     {nome: "Marcelo H", tel: "65 981031406", email:"marcelohenrique8061@gmail.com", funcao:"Auxiliar de Obra"},
     {nome: "Bruno", tel: "69 92723825", email:"bruno__@hotmail.com", funcao:"Engenheiro"},
@@ -21,6 +21,11 @@ export class ColaboradorComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  filterByName(name: string) {
+    this.listFilter = this.listFunc.filter(item => item.nome.toUpperCase() == name.toUpperCase());
+    this.listFunc = this.listFilter;
   }
 
 }

@@ -3,16 +3,26 @@
   margin-top: 5%;
   max-height: 600px;
 
-  &__section-home {
-    width: 15%;
+  &__section-menu {
+    width: 70%;
 
   }
 
   &__section-notice {
-    background-color: #000;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
-
     padding: 5px;
+
+    .section-photo {
+      margin: 5px;
+      border: 12px solid #383838;
+      background-color: #ffffff;
+      img {
+        max-width: 95px;
+        max-height: 95px;
+      }
+    }
 
   }
 }
