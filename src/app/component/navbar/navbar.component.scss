@@ -1,10 +1,7 @@
 .navbar {
   background: linear-gradient(#111936, #912626);
-  width: 15%;
-  height: 60%;
-  position: fixed;
-  margin-top: 2%;
-  border-radius:0px 20px 0px 20px;
+  margin-top: 10px;
+  height: 90vh;
 
   &__menu-logo {
     display: flex;
@@ -29,36 +26,28 @@
   }
 
   &__menu-options {
+    margin: 10px 0 0 6px;
     padding: 12px;
 
     button {
       background: transparent;
       border: none;
-      font-size: 15px;
+      font-size: 20px;
       color: #fff;
       cursor: pointer;
-      i {
-        position: fixed;
-      }
       a {
         margin: 15px;
         font-family: Impact;
         text-shadow: 2px 2px 4px #211a1a;
       }
     }
-
-    hr {
-      border: none;
-      height: 1px;
-      border-top: 1px solid #053527fa;
-    }
     .active {
       color: #595959;
     }
   }
 
-  a:hover {
-    font-size: 18px;
+  button:hover {
+    font-size: 22px;
     transition: 0.2s;
   }
 }

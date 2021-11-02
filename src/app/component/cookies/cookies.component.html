@@ -1,3 +1,10 @@
-<p>
-  cookies works!
-</p>
+<div [ngClass]="showCookie ? 'cookie_lgpd' : 'hidden'">
+  <a
+    >Nós armazenamos dados temporariamentes para melhorar sua experiência de
+    navegação,<br> e recomendar conteúdo do seu interesse, ao clicar no botão você
+    concorda com nossos serviços</a
+  >
+  <button type="button" (click)="aceptCookie()">
+    CIENTE
+  </button>
+</div>

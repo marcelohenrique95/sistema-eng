@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+import { CookiesModule } from './component/cookies/cookies.module';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,13 @@ import { FormsModule } from '@angular/forms';
     NavbarModule,
     FooterModule,
     ObrasModule,
-    ColaboradorModule
+    ColaboradorModule,
+    CookiesModule,
+    HomeModule
   ],
-  providers: [],
+  providers: [
+    CookieService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
