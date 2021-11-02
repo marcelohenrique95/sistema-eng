@@ -8,18 +8,21 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class CookiesComponent implements OnInit {
   public showCookie: boolean;
+  public cookieName: string;
 
   constructor(private cookieService: CookieService) {
     this.showCookie = true;
+    this.cookieName = 'mhstecnologia-cookie'
    }
 
   ngOnInit() {
-    this.cookieService.check("cookie");
+    if(this.cookieService.get(this.cookieName) === '1') {
+      this.showCookie = false;
+    }
   }
 
   aceptCookie() {
-    console.log('entrou no aceptd' + this.showCookie);
-    this.cookieService.set("cookie" ,"sistema-eng-mhs-tec", 364);
+    this.cookieService.set(this.cookieName ,"1", 364);
     this.showCookie = false;
   }
 
