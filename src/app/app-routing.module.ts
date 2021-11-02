@@ -4,6 +4,7 @@ import { ObrasComponent } from './screen/obra/obras.component';
 import { HomeComponent } from './screen/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CriaObraComponent } from './screen/obra/cria-obra/cria-obra.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'colaboradores',
     component: ColaboradorComponent
+  },
+  {
+    path: 'criar-obra',
+    component: CriaObraComponent
   },
   {
     path: '**',

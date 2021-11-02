@@ -6,11 +6,11 @@
     background: transparent;
     border: none;
     font-size: 25px;
-    color: #053527fa;
+    color: #03a7bd;
     cursor: pointer;
   }
   &__button:hover {
-    -webkit-transform: scale(1.8);
-    transform: scale(1.8);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
 }

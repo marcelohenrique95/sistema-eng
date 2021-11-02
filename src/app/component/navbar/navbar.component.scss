@@ -26,6 +26,8 @@
       }
     }
   }
+  hr {
+  }
 
   span {
     display: flex;
@@ -36,7 +38,7 @@
   }
 
   &__menu-options {
-    margin: 10px 0 0 6px;
+    margin: 20px 0 0 6px;
     padding: 12px;
 
     button {
