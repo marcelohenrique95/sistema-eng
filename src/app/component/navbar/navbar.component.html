@@ -4,6 +4,11 @@
       <img src="./../../../assets/img/edificio-png.png"/>
     </div>
   </section>
+  <hr/>
+  <div class="row">
+    <span>Sessão {{minutes}} min e {{seconds}} segundos.</span>
+  </div>
+  <hr/>
   <section class="navbar__menu-options" *ngFor="let item of menu">
     <button routerLinkActive="active" routerLink="{{item.router}}">
       <i class="{{ item.icon }}"></i>

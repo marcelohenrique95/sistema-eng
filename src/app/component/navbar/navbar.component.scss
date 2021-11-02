@@ -27,6 +27,14 @@
     }
   }
 
+  span {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Verdana';
+  }
+
   &__menu-options {
     margin: 10px 0 0 6px;
     padding: 12px;
