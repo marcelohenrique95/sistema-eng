@@ -1,7 +1,9 @@
 .navbar {
-  background: linear-gradient(#111936, #912626);
+  background: linear-gradient(#111936, #03a7bd);
   margin-top: 10px;
   height: 90vh;
+  width: 250px;
+  max-width: 250px;
 
   &__menu-logo {
     display: flex;
@@ -42,12 +44,12 @@
       }
     }
     .active {
-      color: #595959;
+      color: #03a7bd;
     }
   }
 
   button:hover {
-    font-size: 22px;
+    color: #03a7bd;
     transition: 0.2s;
   }
 }

@@ -1,11 +1,9 @@
 .obra {
   display: flex;
   justify-content: center;
-  margin: 120px 15px;
-  width: 100%;
   &__options {
     button {
-      background: linear-gradient(#111936, #912626);
+      background: linear-gradient(#111936, #03a7bd);
       margin: 25px;
       border: none;
       border-radius: 5px;
