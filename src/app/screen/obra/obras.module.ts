@@ -5,14 +5,21 @@ import { CommonModule } from '@angular/common';
 import { ObrasComponent } from './obras.component';
 import { CriaObraComponent } from './cria-obra/cria-obra.component';
 import { VerObraComponent } from './ver-obra/ver-obra.component';
+import { ObrasRoutingModule } from './obras-routing.module';
+import { SharedModule } from 'src/app/shared/shared/shared.module';
 
 @NgModule({
   imports: [
+    ObrasRoutingModule,
     CommonModule,
     RouterModule,
-    ReturnModule
+    ReturnModule,
+    SharedModule
   ],
-  declarations: [ObrasComponent, CriaObraComponent, VerObraComponent],
-  exports: [ObrasComponent]
+  declarations: [
+    ObrasComponent, 
+    CriaObraComponent, 
+    VerObraComponent
+  ]
 })
 export class ObrasModule { }

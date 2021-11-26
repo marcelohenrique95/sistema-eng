@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-obras',
@@ -7,14 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ObrasComponent implements OnInit {
   public button_options= [
-    {label:'CRIAR OBRA', icon:'fas fa-plus' , router:'/criar-obra'},
-    {label:'VER OBRAS', icon:'far fa-eye' , router:'/listar-obra'}
+    {label:'CRIAR OBRA', icon:'fas fa-plus' , router:'criar-obra'},
+    {label:'VER OBRAS', icon:'far fa-eye' , router:'listar-obras'}
   ]
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+
+  goNextPage(route: string): void {
+    this.router.navigate(['/' + route])
+  }
+
+
 
   
 
