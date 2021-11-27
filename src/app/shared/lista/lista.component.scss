@@ -1,3 +1,55 @@
 .list-card {
+    width: 550px;
+    padding: 10px 5px 15px 5px;
     background: #fff;
+
+    h3 {
+        text-align: center;
+    }
+
+    hr {
+        border: 1px solid #03a7bd;
+    }
+
+    &__list {
+        display: flex;
+        margin: 2px;
+    }
+
+    &__photo {
+        display: flex;
+        justify-content: center;
+        padding: 1px;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 7px;
+        border-image-source: linear-gradient(#111936, #03a7bd);
+        margin: 0 5px 5px 0;
+        width: 100px;
+        height: 100px;
+        img {
+            max-width: 80px;
+            height: 80px;
+            margin: auto;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+        width: 70%;
+        margin: 2px;
+        background: #03a7bd33;
+        border-bottom: 2px solid #03a7bd;
+        padding: 15px 0 0 5px;
+        li {
+            margin-bottom: 7px;
+            font-family: Verdana;
+            font-size: 14px;
+            list-style: none;
+        }
+        hr {
+            margin-top: 15px;
+        }
+    }
 }
+

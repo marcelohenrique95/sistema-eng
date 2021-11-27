@@ -1,16 +1,21 @@
 <div class="list-card">
+  <h3>LISTA DE {{ title }}</h3>
   <section *ngFor="let list of listaTest">
-      <!-- ADICIONAR UMA DIV PARA IMAGEM, E DEIXAR A LISTA AO LADO-->
-      <div>
-          <img class="list-card__photo" src=""/>
+    <!-- ADICIONAR UMA DIV PARA IMAGEM, E DEIXAR A LISTA AO LADO-->
+    <div class="list-card__list">
+      <div class="list-card__photo b-gradient">
+        <img
+          src="{{ list.photo }}"
+        />
       </div>
-      <div>
-        <li>
-            <ul>{{ list.nome }}</ul>
-            <ul>{{ list.idade }}</ul>
-            <ul>{{ list.cargo }}</ul>
-            <ul>{{ list.email }}</ul>
-          </li>
+      <hr/>
+      <div class="list-card__info">
+        <li>Nome: <strong>{{ list.nome }}</strong></li>
+        <li>Idade: <strong>{{ list.idade }}</strong></li>
+        <li>Cargo: <strong>{{ list.cargo }}</strong></li>
+        <li>Email: <strong>{{ list.email }}</strong></li>
+       
       </div>
+    </div>
   </section>
 </div>

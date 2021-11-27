@@ -1,0 +1,7 @@
+<div class="row" *ngFor="let item of button_options">
+  <button (click)="goNextPage(item.router)">
+    <i class="{{ item.icon }}"></i>
+    <br />
+    <a>{{ item.label }}</a>
+  </button>
+</div>

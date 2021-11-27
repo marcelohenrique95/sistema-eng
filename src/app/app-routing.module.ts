@@ -18,20 +18,13 @@ const routes: Routes = [
   },
   {
     path: 'obra',
-    component: ObrasComponent
+    loadChildren: () => import("src/app/screen/obra/obras.module").then((m) => m.ObrasModule),
   },
   {
     path: 'colaboradores',
     component: ColaboradorComponent
   },
-  {
-    path: 'criar-obra',
-    component: CriaObraComponent
-  },
-  {
-    path: '**',
-    component: PageErrorComponent
-  }
+  
 ];
 
 @NgModule({

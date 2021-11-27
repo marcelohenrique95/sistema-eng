@@ -1,0 +1,20 @@
+button {
+    background: linear-gradient(#111936, #03a7bd);
+    margin: 25px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 130px;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    a {
+      font-size: 25px;
+      text-shadow: 2px 2px 4px #211a1a;
+      font-weight: bold;
+    }
+  }
+  button:hover {
+    box-shadow: 0px 0px 20px 5px #646464;
+    transform: 0.4s;
+  }

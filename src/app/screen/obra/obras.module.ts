@@ -7,6 +7,7 @@ import { CriaObraComponent } from './cria-obra/cria-obra.component';
 import { VerObraComponent } from './ver-obra/ver-obra.component';
 import { ObrasRoutingModule } from './obras-routing.module';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
+import { MenuObraComponent } from './menu-obra/menu-obra.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,7 @@ import { SharedModule } from 'src/app/shared/shared/shared.module';
   declarations: [
     ObrasComponent, 
     CriaObraComponent, 
-    VerObraComponent
+    VerObraComponent, MenuObraComponent
   ]
 })
 export class ObrasModule { }

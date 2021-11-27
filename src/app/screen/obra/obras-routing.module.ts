@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { faListUl } from '@fortawesome/free-solid-svg-icons';
+import { CriaObraComponent } from './cria-obra/cria-obra.component';
+import { MenuObraComponent } from './menu-obra/menu-obra.component';
 import { ObrasComponent } from './obras.component';
 import { VerObraComponent } from './ver-obra/ver-obra.component';
 
@@ -8,11 +9,18 @@ const routes: Routes = [
   {
     path: '',
     component: ObrasComponent,
-    pathMatch: 'full',
     children: [
+      {
+        path: '',
+        component: MenuObraComponent
+      },
       {
         path: 'listar-obras',
         component: VerObraComponent
+      },
+      {
+        path: 'criar-obra',
+        component: CriaObraComponent
       }
     ]
   }
