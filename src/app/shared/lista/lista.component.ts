@@ -1,7 +1,6 @@
-import { style } from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { listaFuncionarios } from 'src/app/config/static/lista-pessoas';
+import { TitlePageEnum } from 'src/app/config/enum/title-page';
 
 @Component({
   selector: 'app-lista',
@@ -21,13 +20,13 @@ export class ListaComponent implements OnInit {
     this.checkRota();
   }
 
-  checkRota(){
+  checkRota(): void{
     const str = 'colaboradores';
     const url = this.router.url;
     if(url.includes(str)) {
-      this.titleList = 'FUNCIONÁRIOS';
+      this.titleList = TitlePageEnum.COLABORADORES;
     } else {
-      this.titleList = 'OBRAS';
+      this.titleList = TitlePageEnum.OBRAS;
     }
 
   }
