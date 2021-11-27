@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListaComponent } from '../lista/lista.component';
-import { CardComponent } from '../card/card.component';
-import { ModalComponent } from '../modal/modal.component';
+import { ListaComponent } from './lista/lista.component';
+import { CardComponent } from './card/card.component';
+import { ModalComponent } from './modal/modal.component';
 
 
 

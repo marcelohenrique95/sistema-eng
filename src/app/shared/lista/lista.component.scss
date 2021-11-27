@@ -1,10 +1,12 @@
 .list-card {
     width: 550px;
     padding: 10px 5px 15px 5px;
-    background: #fff;
+    background: #efefef;
+    box-shadow: 2px 4px 8px -2px #000;
 
     h3 {
         text-align: center;
+        color: #03a7bd;
     }
 
     hr {

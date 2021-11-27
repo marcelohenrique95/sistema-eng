@@ -6,7 +6,7 @@ import { ObrasComponent } from './obras.component';
 import { CriaObraComponent } from './cria-obra/cria-obra.component';
 import { VerObraComponent } from './ver-obra/ver-obra.component';
 import { ObrasRoutingModule } from './obras-routing.module';
-import { SharedModule } from 'src/app/shared/shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 import { MenuObraComponent } from './menu-obra/menu-obra.component';
 
 @NgModule({

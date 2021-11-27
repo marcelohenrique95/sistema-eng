@@ -1,23 +1,5 @@
 <app-return></app-return>
-<div class="colaborate">
-  <table class="colaborate__table">
-    <thead>
-    <tr>
-      <td>Nome</td>
-      <td>Telefone</td>
-      <td>E-mail</td>
-      <td>Função</td>
-      <td>EDITAR</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let colab of listFunc">
-      <td>{{colab.nome}}</td>
-      <td>{{colab.tel}}</td>
-      <td>{{colab.email}}</td>
-      <td>{{colab.funcao}}</td>
-      <td><a><i class="fas fa-user-edit"></i></a></td>
-    </tr>
-  </tbody>
-  </table>
+<div class="container">
+  <app-lista [lista]="listaColaboradores"></app-lista>
 </div>
+

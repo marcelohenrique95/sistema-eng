@@ -1,5 +1,7 @@
 import { style } from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { listaFuncionarios } from 'src/app/config/static/lista-pessoas';
 
 @Component({
   selector: 'app-lista',
@@ -9,34 +11,24 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ListaComponent implements OnInit {
   @Input() lista: any;
 
-  title = 'FUNCIONÁRIOS';
+  public titleList: string;
 
-  listaTest = [
-    {
-      nome: 'Marcelo Henrique',
-      idade: '25',
-      cargo: 'TI',
-      email: 'marcelohenrique8061@gmail.com',
-      photo: 'https://exame.com/wp-content/uploads/2021/02/bill.jpg',
-    },
-    {
-      nome: 'De Arrascaeta',
-      idade: '22',
-      cargo: 'Engenheiro',
-      email: 'arrasca@gmail.com',
-      photo:
-        'https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2021/11/arrascaeta-certa.jpg',
-    },
-    {
-      nome: 'Diego Alves',
-      idade: '35',
-      cargo: 'Gerente',
-      email: 'diegoalvesgol@gmail.com',
-      photo: 'https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2021/09/flamengo-01-diego-alves-508x338.jpg',
-    },
-  ];
+  constructor(private router: Router) {
+    this.titleList = '';
+  }
 
-  constructor() {}
+  ngOnInit(): void {
+    this.checkRota();
+  }
 
-  ngOnInit(): void {}
+  checkRota(){
+    const str = 'colaboradores';
+    const url = this.router.url;
+    if(url.includes(str)) {
+      this.titleList = 'FUNCIONÁRIOS';
+    } else {
+      this.titleList = 'OBRAS';
+    }
+
+  }
 }
