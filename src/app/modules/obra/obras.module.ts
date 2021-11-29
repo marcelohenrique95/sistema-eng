@@ -1,4 +1,3 @@
-import { ReturnModule } from './../../component/return/return.module';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -14,7 +13,6 @@ import { MenuObraComponent } from './menu-obra/menu-obra.component';
     ObrasRoutingModule,
     CommonModule,
     RouterModule,
-    ReturnModule,
     SharedModule
   ],
   declarations: [

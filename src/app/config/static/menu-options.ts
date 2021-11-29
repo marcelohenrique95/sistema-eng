@@ -5,6 +5,6 @@ export const menuOptions = [
     {label:'ORÇAMENTOS', icon:'fas fa-wallet', router:'/orcamento'},
     {label:'COLABORADORES', icon:'fas fa-users', router:'/colaboradores'},
     {label:'PARCEIROS', icon:'fas fa-handshake', router:'/parceiros'},
-    {label:'SOBRE NÓS', icon:'fas fa-info-circle', router:'/info'},
+    {label:'SOBRE NÓS', icon:'fas fa-info-circle', router:'/sobre-nos'},
     {label:'SAIR', icon:'fas fa-sign-out-alt', router:'/login'},
 ]

@@ -1,0 +1,48 @@
+.container-info {
+  width: 300px;
+  height: 700px;
+  background: #efefef;
+  box-shadow: 2px 4px 8px -2px #000;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__content {
+    padding: 3px;
+    justify-content: center;
+
+    div {
+      margin-bottom: 15px;
+      cursor: pointer;
+      a {
+        font-size: 17px;
+        font-weight: bold;
+        color: #4d4b4b;
+      }
+      :hover {
+        background: #03a7bd7a;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+.info-msg div {
+    display: none;
+    position: relative;
+}
+
+.info-msg:hover div {
+    display: block;
+    position: absolute;
+    top: 150px;
+    margin-left: -155px;
+}
+
+.info-msg div {
+    width: 15em;
+    background: #808080;
+    border-radius: 5px;
+    padding: 5px;
+}

@@ -1,0 +1,14 @@
+.container-info{
+    width: 1000px;
+    background: #efefef;
+    box-shadow: 2px 4px 8px -2px #000;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+}
