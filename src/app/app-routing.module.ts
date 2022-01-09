@@ -22,6 +22,10 @@ const routes: Routes = [
     component: ColaboradorComponent
   },
   {
+    path: 'parceiros',
+    loadChildren: () => import("src/app/modules/parceiros/parceiros.module").then((m) => m.ParceirosModule),
+  },
+  {
     path: 'sobre-nos',
     loadChildren: () => import("src/app/modules/sobre-nos/sobre-nos.module").then((m) => m.SobreNosModule),
   },

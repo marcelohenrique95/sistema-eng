@@ -1,4 +1,8 @@
 export enum TitlePageEnum {
     COLABORADORES = 'COLABORADORES',
-    OBRAS = 'OBRAS'
+    OBRAS = 'OBRAS',
+    PARCEIROS = 'PARCEIROS',
+    SOBRENOS = 'SOBRE NÓS',
+    ORCAMENTO = 'ORÇAMENTO',
+    NOTFOUND = ''
 }

@@ -1,0 +1,28 @@
+.card-container {
+    background: #efefef;
+    box-shadow: 2px 4px 8px -2px #000;
+    margin-top: 15px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 15px;
+    h1 {
+        color: #111936;
+    }
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.circle {
+    display: block;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    margin: 0;
+    background: radial-gradient(circle at 10px 10px, #5cabff, #000);
+}

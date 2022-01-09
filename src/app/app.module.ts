@@ -12,10 +12,12 @@ import { CookieService } from 'ngx-cookie-service';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { SobreNosModule } from './modules/sobre-nos/sobre-nos.module';
+import { ParceirosComponent } from './modules/parceiros/parceiros.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ParceirosComponent
   ],
   imports: [
     BrowserModule,

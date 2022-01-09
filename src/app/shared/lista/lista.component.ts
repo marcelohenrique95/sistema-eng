@@ -28,6 +28,6 @@ export class ListaComponent implements OnInit {
     } else {
       this.titleList = TitlePageEnum.OBRAS;
     }
-
   }
+  
 }
