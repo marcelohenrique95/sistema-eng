@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CriaObraComponent implements OnInit {
 
-  constructor() { }
+  public titlePage: string;
+
+  constructor() {
+    this.titlePage = 'Cadastrar obra';
+   }
 
   ngOnInit(): void {
   }

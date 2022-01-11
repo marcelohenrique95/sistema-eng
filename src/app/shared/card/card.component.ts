@@ -9,14 +9,11 @@ import { TitlePageEnum } from 'src/app/config/enum/title-page';
 })
 export class CardComponent implements OnInit {
 
-  public titleCard: string;
+  @Input() titleCard = '';
 
-  constructor(private router: Router) {
-    this.titleCard = '';
-   }
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
-    this.checkRota();
   }
 
   checkRota(): void{

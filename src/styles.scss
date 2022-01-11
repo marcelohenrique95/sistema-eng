@@ -12,14 +12,57 @@
     padding: 5px;
 }
 
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-input {
+    margin: 10px 0 2px 5px;
+    font-weight: bold;
+    color: #111936;
+    font-family: Verdana;
+    font-size: 13px;
+}
+
 .input-field {
-    border: 1px solid #03a7bd;
-    border-radius: 5px;
-    height: 20px;
+    border: 2px solid #111936;
+    border-radius: 15px;
+    height: 28px;
+    max-width: 25em;
+    margin-bottom: 2px;
 }
 
 .b-gradient {
 	border-image-source: linear-gradient(#111936, #03a7bd);
+}
+
+.btn-primary {
+    margin: 15px 5px 0 0;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background: #111936;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+   
+}
+button:hover {
+    transition: 0.1s;
+    opacity: 0.7;
+} 
+
+
+.btn-secondary {
+    margin: 15px 5px 0 0;
+    border-radius: 20px;
+    border: 1px solid #111936;
+    background: #fff;
+    color: #111936;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
 }
 
 h1 {

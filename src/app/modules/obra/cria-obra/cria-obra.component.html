@@ -1,19 +1,22 @@
-<div class="card">
-    <div class="col-xs-12">
-        <div class="col-md-3">
-            <p>cria-obra works!</p>
-        <input class="input-field"/>
-
+<app-card [titleCard]="titlePage">
+    <div class="">
+        <div class="row">
+            <label class="label-input">nome</label>
+            <input class="input-field"/>
         </div>
-        <div class="col-md-3">
-        <span>Teste</span>
-        <input class="input-field"/>
-            
+        <div class="row">
+            <label class="label-input">tipo</label>
+            <input class="input-field"/>
         </div>
-
+        <div class="row">
+            <label class="label-input">data</label>
+            <input class="input-field"/>
+        </div>
+        <div class="row mt-1">
+            <label class="label-input">localização</label>
+            <input class="input-field"/>
+        </div>
     </div>
-    <section>
-        <p>cria-obra works!</p>
-        <input class="input-field"/>
-    </section>
-</div>
+    <button type="button" class="btn-primary">TESTANDO BOTAO</button>
+    <button type="button" class="btn-secondary">TESTANDO BOTAO</button>
+</app-card>

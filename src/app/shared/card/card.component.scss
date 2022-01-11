@@ -1,4 +1,6 @@
 .card-container {
+    min-width: 1100px;
+    min-height: 500px;
     background: #efefef;
     box-shadow: 2px 4px 8px -2px #000;
     margin-top: 15px;
@@ -15,7 +17,7 @@
 }
 
 .card-body {
-    padding: 5px;
+    padding: 15px;
 }
 
 .circle {
