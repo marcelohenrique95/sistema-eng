@@ -1,6 +1,14 @@
 <div class="home">
   <section class="home__section-menu">
-
+    <div class="home__section-menu__list-items" >
+      <div *ngFor="let item of menuItem">
+        <button (click)="goNextPage(item.router)">
+          <i class="{{ item.icon }}"></i>
+          <br />
+          <a>{{ item.label }}</a>
+        </button>
+      </div>
+    </div>
   </section>
   <section class="home__section-notice">
     <div class="section-photo">
