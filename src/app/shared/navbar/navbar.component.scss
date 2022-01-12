@@ -1,7 +1,7 @@
 .navbar {
+  display: block;
   background: linear-gradient(#111936, #03a7bd);
   margin-top: 10px;
-  height: 90vh;
   width: 250px;
   max-width: 250px;
 
@@ -50,7 +50,6 @@
       a {
         margin: 15px;
         font-family: Impact;
-        text-shadow: 2px 2px 4px #211a1a;
       }
     }
     .active {
