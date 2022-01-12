@@ -1,6 +1,8 @@
 .container-info {
-  width: 300px;
-  height: 700px;
+  max-width: 300px;
+  min-height: 400px;
+  max-height: 700px;
+  padding: 5px 15px;
   background: #efefef;
   box-shadow: 2px 4px 8px -2px #000;
 
